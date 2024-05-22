@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: var(--font-roboto-mono);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scrollbar-width: thin; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0.5em; /* Adjust as needed */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Adjust as needed */
+  }
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+    max-width: 1920px; /* Adjust this value for your maximum container width */
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem; /* 32px */
+      padding-right: 2rem; /* 32px */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 4rem; /* 64px */
+      padding-right: 4rem; /* 64px */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 6rem; /* 96px */
+      padding-right: 6rem; /* 96px */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      padding-left: 8rem; /* 128px */
+      padding-right: 8rem; /* 128px */
+    }
+  }
+  
